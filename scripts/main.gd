@@ -14,7 +14,9 @@ func _ready():
 	gui.update_food()
 	
 	yield(get_tree().create_timer(2), "timeout")
-	plant.modulate = Color(1, 0, 0, 1)
+	plant.die()
 	
 	yield(get_tree().create_timer(2), "timeout")
-	plant.flip_v = true
+	OS.alert("Game over")
+	get_tree().change_scene("res://scenes/ui/main_menu.tscn")
+	

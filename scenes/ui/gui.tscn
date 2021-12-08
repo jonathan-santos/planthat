@@ -1,0 +1,86 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/sprites/icon.png" type="Texture" id=1]
+[ext_resource path="res://scripts/ui/gui.gd" type="Script" id=2]
+
+[node name="GUI" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="PlantName" type="Label" parent="."]
+margin_right = 330.0
+margin_bottom = 100.0
+text = "Plant Name"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="PlantName"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0156863, 0.301961, 0, 1 )
+
+[node name="ViewAll" type="Button" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -266.835
+margin_right = -152.835
+margin_bottom = 99.0
+text = "O"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Settings" type="Button" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -114.0
+margin_bottom = 99.0
+text = "S"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Water" type="TextureRect" parent="."]
+modulate = Color( 0.0313726, 0, 1, 1 )
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -113.0
+margin_top = 142.696
+margin_bottom = 255.696
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Light" type="TextureRect" parent="."]
+modulate = Color( 1, 0.937255, 0, 1 )
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -113.0
+margin_top = 287.771
+margin_bottom = 400.771
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Food" type="TextureRect" parent="."]
+modulate = Color( 1, 0.494118, 0, 1 )
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -113.0
+margin_top = 432.251
+margin_bottom = 545.251
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="ViewAll" to="." method="_on_ViewAll_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_Settings_pressed"]

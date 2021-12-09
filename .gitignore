@@ -6,4 +6,6 @@ export_presets.cfg
 # Imported translations (automatically generated from CSV files)
 *.translation
 
+*.blend1
+
 .DS_Store

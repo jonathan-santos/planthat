@@ -12,4 +12,4 @@ script = ExtResource( 3 )
 [node name="Plant" parent="." instance=ExtResource( 1 )]
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.13305, 5.21042 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.13305, 6.75156 )

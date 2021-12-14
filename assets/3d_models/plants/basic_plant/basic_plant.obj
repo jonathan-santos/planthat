@@ -1,6 +1,6 @@
-# Blender v2.93.0 OBJ File: 'basic-plant.blend'
+# Blender v2.93.0 OBJ File: 'basic_plant.blend'
 # www.blender.org
-mtllib basic-plant.mtl
+mtllib basic_plant.mtl
 o BasicPlant_Cube
 v 0.168695 0.308142 -0.168695
 v 0.308142 -0.308142 -0.308142
